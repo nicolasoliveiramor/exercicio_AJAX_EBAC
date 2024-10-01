@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', function(){
             // Atualizando os elementos do DOM com os dados recebidos do JSON
 
                 userAvatar.src = json.avatar_url
-                userProfileName.innerText = json.login
-                profileUserName.innerText = json.name
+                userProfileName.innerText = json.name
+                profileUserName.innerText = json.login
                 userRepositories.innerText = json.public_repos
                 userFollowing.innerText = json.following
                 userFollowers.innerText = json.followers
