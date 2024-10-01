@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function(){
     
-        // localizando id's
     const userAvatar = document.getElementById('profile-avatar')
     const userProfileName = document.getElementById('profile-name')
     const profileUserName = document.getElementById('profile-username')
@@ -12,7 +11,11 @@ document.addEventListener('DOMContentLoaded', function(){
     const endpoint = `https://api.github.com/users/nicolasoliveiramor`
 
     fetch(endpoint)
-        .then(function(resposta) {
+
+    .then(function(resposta) {
+            
+        // Tratando exceção de requisição da API
+
             if (!resposta.ok) {
                 throw new Error (`Erro: ${resposta.status} - erro de requisição`)
             } else {
@@ -20,16 +23,22 @@ document.addEventListener('DOMContentLoaded', function(){
             }
         })
         .then(function(json){
-            userAvatar.src = json.avatar_url
-            userProfileName.innerText = json.login
-            profileUserName.innerText = json.name
-            userRepositories.innerText = json.public_repos
-            userFollowing.innerText = json.following
-            userFollowers.innerText = json.followers
-            userProfile.href = json.html_url
+
+            // Atualizando os elementos do DOM com os dados recebidos do JSON
+
+                userAvatar.src = json.avatar_url
+                userProfileName.innerText = json.login
+                profileUserName.innerText = json.name
+                userRepositories.innerText = json.public_repos
+                userFollowing.innerText = json.following
+                userFollowers.innerText = json.followers
+                userProfile.href = json.html_url
         })
         .catch(function(error){
-            alert(error.message)
+
+            // Exibe uma mensagem de erro na tela em caso de falha na requisição
+
+                alert(error.message)
         })
         .finally(function() {
             console.log('Requisição finalizada com sucesso')
