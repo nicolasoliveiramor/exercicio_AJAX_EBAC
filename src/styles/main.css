@@ -40,15 +40,15 @@ header .container img {
 
 header .container input {
     border-radius: 8px;
-    padding: 4px 4px;
+    padding: 8px 4px;
 }
 
 header .container button {
     border-radius: 8px;
     border: none;
-    padding: 6px 4px;
+    padding: 10px 10px;
     color: var(--bg-color);
-    background-color: green;
+    background-color: var(--header-color);
 }
 
 section {
