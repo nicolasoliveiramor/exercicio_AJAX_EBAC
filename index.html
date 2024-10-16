@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Meu Github</title>
     <link rel="stylesheet" href="./src/styles/main.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -23,6 +25,29 @@
                 <img id="profile-avatar" class="profile-avatar" src="https://via.placeholder.com/180x180" alt=".">
                 <h1 id="profile-name" class="profile-name">Usuario não encontrado</h1>
                 <h2 id="profile-username" class="profile-username">Username não encontrado</h2>
+                    <ul class="numbers--mobile">
+                        <li class="numbers-item--mobile">
+                            <h4>Repositórios</h4>
+                            <span id="user-repositories-mobile">5</span>
+                        </li>
+                        <li class="numbers-item--mobile">
+                            <h4>Seguidores</h4>
+                            <span id="user-following-mobile">5</span>
+                        </li>
+                        <li class="numbers-item--mobile">
+                            <h4>Seguindo</h4>
+                            <span id="user-followers-mobile">5</span>
+                        </li>
+                    </ul>
+                <a id="profile-link" href="#" class="profile-link" target="_blank">Ver no Github</a>
+            </div>
+            <div class="container_readme">
+                <h2>Sobre</h2>
+                <p id="profile-readme">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo facilis provident, doloribus ratione
+                    nemo cum ut voluptatum mollitia sed reiciendis dolores nobis vitae dolorum? Facere reprehenderit
+                    exercitationem voluptate aliquid odio?
+                </p>
                 <ul class="numbers">
                     <li class="numbers-item">
                         <h4>Repositórios</h4>
@@ -37,16 +62,10 @@
                         <span id="user-followers">5</span>
                     </li>
                 </ul>
-                <a id="profile-link" href="#" class="profile-link" target="_blank">Ver no Github</a>
             </div>
-            <div class="container_readme">
-                <h2>README</h2>
-                <p id="profile-readme">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo facilis provident, doloribus ratione nemo cum ut voluptatum mollitia sed reiciendis dolores nobis vitae dolorum? Facere reprehenderit exercitationem voluptate aliquid odio?
-                </p>
-            </div>  
         </div>
     </section>
     <script src="./src/scripts/main.js"></script>
 </body>
+
 </html>
