@@ -199,11 +199,11 @@ section .container_repositories {
 
     .numbers-item--mobile span {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.7em;
     }
 
     .numbers-item--mobile h4 {
-        font-size: 24px;
+        font-size: 1.3em;
     }
 
     .numbers {
@@ -253,11 +253,11 @@ section .container_repositories {
 
     .numbers-item--mobile span {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.7em;
     }
 
     .numbers-item--mobile h4 {
-        font-size: 24px;
+        font-size: 1.3em;
     }
 
     .numbers {
